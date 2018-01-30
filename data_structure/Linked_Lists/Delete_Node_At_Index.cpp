@@ -10,7 +10,7 @@
 Node* Delete(Node *head, int position)
 {
   Node *tmp;
-  if (head == nullptr)
+  if (head == nullptr )
   {
       return head;
   }
