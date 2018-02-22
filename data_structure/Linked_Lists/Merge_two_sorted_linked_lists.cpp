@@ -15,9 +15,9 @@ Node* MergeLists(Node *headA, Node* headB)
     if (headA->data > headB->data)
     {
         Node* tmp = headB;
-        headB = headB->next;
         tmp->next = headA;
         headA = tmp;
+        headB = headB->next;
         headA->next = MergeLists(headA->next, headB);
     }
     else if (headA->data < headB->data)
